@@ -1,0 +1,21 @@
+# Registration notification email
+#
+# Parameters: {0} The name of the DSpace instance
+#             {1} The URL of the DSpace instance 
+#             {2} Name:
+#             {3} Email:
+#             {4} Registration Date:
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторій ЧДТУ - повідомлення про реєстрацію нового користувача
+
+У системі "{0}" ({1}) було зареєстровано нового користувача:
+
+Ім’я:                   {2}
+Пошта:                  {3}
+Дата:                   {4}
+
+
+
+Репозиторій ЧДТУ

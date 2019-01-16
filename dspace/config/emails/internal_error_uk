@@ -1,0 +1,28 @@
+# E-mail sent to designated address when an internal server error occurs
+#
+# Parameters: {0} DSpace server URL
+#             {1} Date & time
+#             {2} Session ID
+#             {3} URL + HTTP parameters, if any
+#             {4} Exception stack trace
+#             {5} User details
+#             {6} IP address
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторій ЧДТУ - внутрішня помилка сервера
+Внутрішня помилка сервера відбулася на {0}:
+
+Дата:           {1}
+ID сесії:       {2}
+Користувач:     {5}
+IP адреса:      {6}
+
+{3}
+
+Повідомлення про помилку:
+{4}
+
+
+
+Репозиторій ЧДТУ

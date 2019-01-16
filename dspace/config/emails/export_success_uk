@@ -1,0 +1,18 @@
+# Email sent to DSpace users when they successfully export an item or collection.
+#
+# Parameters: {0} is expanded to a special URL
+#             {1} configurable time (hours) an export file will be kept
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторій ЧДТУ - експорт запитуваного матеріалу готовий для завантаження
+Експорт запитуваного Вами матеріалу з репозиторію ЧДТУ готовий для завантаження.
+
+Ви можете завантажити файл, використовуючи наступне посилання:
+{0}
+
+Цей файл буде доступний ще щонайменше {1} (години).
+
+
+Репозиторій ЧДТУ
+
