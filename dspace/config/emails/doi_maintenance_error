@@ -10,11 +10,11 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: Repository at CSTU: Error {0} DOI {3}
+Subject: Repository at ChSTU: Error {0} DOI {3}
 
 Date:    {1}
 
 {0} DOI {4} for {2} with ID {3} failed:
 {5}
 
-Repository at CSTU
+Repository at ChSTU

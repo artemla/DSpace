@@ -3,10 +3,10 @@
 # Parameters: {0} is the output of healthcheck command
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: Repository at CSTU: Repository healthcheck
+Subject: Repository at ChSTU: Repository healthcheck
 The healthcheck finished with the following output:
 
 {0}
 
 
-Repository at CSTU
+Repository at ChSTU

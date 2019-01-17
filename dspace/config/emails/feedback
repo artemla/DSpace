@@ -10,7 +10,7 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: Repository at CSTU: Feedback Form Information
+Subject: Repository at ChSTU: Feedback Form Information
 
 Comments:
 
@@ -24,4 +24,4 @@ Referring Page: {3}
 User Agent: {4}
 Session: {5}
 
-Repository at CSTU
+Repository at ChSTU
