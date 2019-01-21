@@ -23,6 +23,9 @@ import org.dspace.core.LogManager;
 import org.dspace.eperson.EPerson;
 import org.dspace.eperson.factory.EPersonServiceFactory;
 import org.dspace.eperson.service.EPersonService;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.LinkedHashMap;
 
 /**
  * Servlet for handling editing user profiles
@@ -133,6 +136,27 @@ public class EditProfileServlet extends DSpaceServlet
         String firstName = request.getParameter("first_name");
         String phone = request.getParameter("phone");
         String language = request.getParameter("language");
+        
+        //metadata values
+        Map<String, String> metadatValues = new LinkedHashMap<String, String>();
+
+        for (Entry<String, String[]> entry :
+        ((Map<String, String[]>)request.getParameterMap()).entrySet())
+        {
+            String name = entry.getKey();
+        
+            if (name.startsWith("metadata["))
+            {
+                String key = name.substring(name.indexOf('[') + 1, name.indexOf(']')); 
+                metadatValues.put(key, entry.getValue()[0]);
+            }
+        }
+        
+        for (Map.Entry<String, String> entry : metadatValues.entrySet())
+        {
+            personService.setMetadataSingleValue(context, eperson, "eperson" , entry.getKey(), null, null, entry.getValue());
+        }
+        //
 
         // Update the eperson
         eperson.setFirstName(context, firstName);
