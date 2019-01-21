@@ -1,0 +1,27 @@
+# E-mail sent with the information filled out in a suggest form.
+#
+# Parameters: {0} recipient name
+#             {1} sender name
+#             {2} repository name
+#             {3} item title
+#             {4} item handle URI
+#             {5} item local URL - may be used in lieu of {4} if not using handle server
+#             {6} collection name
+#             {7} sender message 
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторий ЧГТУ - Вам порекомендовали материал
+
+Уважаемый {0}:
+
+{1} просил(а) нас отправить Вам это письмо с информацией о ресурсе {2}.
+
+Заголовок:         {3}
+Адрес:             {5}
+В собрании:        {6}
+Личное сообщение:  {7}
+
+
+
+
+Репозиторий ЧГТУ

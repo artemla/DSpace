@@ -1,0 +1,13 @@
+# E-mail sent by the healthcheck command to whomever is mentioned as -e parameter
+#
+# Parameters: {0} is the output of healthcheck command
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторий ЧГТУ - проверка состояния репозитория (healthcheck)
+Проверка состояния (healthcheck) репозитория закончилась со следующим результатом:
+
+{0}
+
+
+
+Репозиторий ЧГТУ

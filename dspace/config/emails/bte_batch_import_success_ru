@@ -1,0 +1,14 @@
+# Email sent to DSpace users when they successfully batch import items via BTE.
+#
+# Parameters: {0} the filepath to the mapfile created by the batch import
+#          
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторий ЧГТУ - пакетный импорт успешно завершен
+Пакетный импорт материалов, который Вы инициировали из интерфейса репозитория, успешно завершился.
+
+Вы можете найти файл „mapfile“ импорта по следующему пути: {0}
+
+
+Репозиторий ЧГТУ

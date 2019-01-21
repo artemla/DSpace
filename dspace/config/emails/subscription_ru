@@ -1,0 +1,16 @@
+# E-mail sent to DSpace users when new items appear in collections they are
+# subscribed to
+#
+# Parameters: {0} is the details of the new collections and items
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторий ЧГТУ - подписка
+Новые ресурсы в собраниях, на которые Вы подписаны:
+
+{0}
+
+Отменить подписку можно в профиле в разделе "Обновления на e-mail".
+
+
+
+Репозиторий ЧГТУ

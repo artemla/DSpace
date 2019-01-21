@@ -1,0 +1,19 @@
+# Email sent to DSpace users when they successfully export an item or collection.
+#
+# Parameters: {0} the export error
+#             {1} the URL to the feedback page
+#             
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Репозиторий ЧГТУ - экспорт запрашиваемого Вами материала не был завершен
+Экспорт запрашиваемого Вами материала не был завершен по следующим причинам:
+  {0}
+
+Для получения дополнительной информации обратитесь к администратору:
+  {1}
+
+
+
+Репозиторий ЧГТУ
+
