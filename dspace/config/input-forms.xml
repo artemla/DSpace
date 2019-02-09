@@ -37,7 +37,21 @@
  <form-definitions>
 
    <form name="traditional">
+     
      <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
+     </page>
+     
+     <page number="2">
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
@@ -86,6 +100,30 @@
 
        <field>
          <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>patent</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Patent No</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Patent</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>coverage</dc-element>
+         <dc-qualifier>placename</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Patent Country</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Patent</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
@@ -94,27 +132,41 @@
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
        </field>
-
+       
        <field>
          <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>citation</dc-qualifier>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Citation</label>
+         <label>Volume</label>
          <input-type>onebox</input-type>
-         <hint>Enter the standard citation for the previously issued instance of this item.</hint>
+         <hint></hint>
          <required></required>
+         <type-bind>Article</type-bind>
        </field>
 
        <field>
          <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartofseries</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Series/Report No.</label>
-         <input-type>series</input-type>
-         <hint>Enter the series and number assigned to this item by your community.</hint>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Issue</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
          <required></required>
+         <type-bind>Article</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>pages</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Pages</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Article,Book,Thesis,Monograph,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Laboratory Instructions,PhD thesis,Journal</type-bind>
        </field>
 
        <field>
@@ -132,17 +184,6 @@ it, please enter the types and the actual numbers or codes.</hint>
 
        <field>
          <dc-schema>dc</dc-schema>
-         <dc-element>type</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Type</label>
-         <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
          <dc-element>language</dc-element>
          <dc-qualifier>iso</dc-qualifier>
          <repeatable>false</repeatable>
@@ -153,7 +194,7 @@ it, please enter the types and the actual numbers or codes.</hint>
        </field>
      </page>
 
-     <page number="2">
+     <page number="3">
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>subject</dc-element>
@@ -294,12 +335,24 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>Image, 3-D</stored-value>
      </pair>
      <pair>
+       <displayed-value>Journal</displayed-value>
+       <stored-value>Journal</stored-value>
+     </pair>
+     <pair>
        <displayed-value>Map</displayed-value>
        <stored-value>Map</stored-value>
      </pair>
      <pair>
+       <displayed-value>Monograph</displayed-value>
+       <stored-value>Monograph</stored-value>
+     </pair>
+     <pair>
        <displayed-value>Musical Score</displayed-value>
        <stored-value>Musical Score</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Patent</displayed-value>
+       <stored-value>Patent</stored-value>
      </pair>
      <pair>
        <displayed-value>Plan or blueprint</displayed-value>
@@ -312,6 +365,10 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Presentation</displayed-value>
        <stored-value>Presentation</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>PhD thesis</displayed-value>
+       <stored-value>PhD thesis</stored-value>
      </pair>
      <pair>
        <displayed-value>Recording, acoustical</displayed-value>
@@ -345,6 +402,36 @@ it, please enter the types and the actual numbers or codes.</hint>
        <displayed-value>Working Paper</displayed-value>
        <stored-value>Working Paper</stored-value>
      </pair>
+     
+     <pair>
+       <displayed-value>Підручник</displayed-value>
+       <stored-value>Textbook</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Посібник</displayed-value>
+       <stored-value>Handbook</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Курс лекцій</displayed-value>
+       <stored-value>Course of Lectures</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Навчальна програма, план</displayed-value>
+       <stored-value>Training Program</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Методичні рекомендації</displayed-value>
+       <stored-value>Methodical Recommendations</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Лабораторні вказівки</displayed-value>
+       <stored-value>Laboratory Instructions</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Звіт</displayed-value>
+       <stored-value>Report</stored-value>
+     </pair>
+     
      <pair>
        <displayed-value>Other</displayed-value>
        <stored-value>Other</stored-value>
@@ -360,12 +447,16 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value></stored-value>
      </pair>
      <pair>
-       <displayed-value>English (United States)</displayed-value>
-       <stored-value>en_US</stored-value>
-      </pair>
-     <pair>
        <displayed-value>English</displayed-value>
        <stored-value>en</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Ukrainian</displayed-value>
+       <stored-value>uk</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Russian</displayed-value>
+       <stored-value>ru</stored-value>
      </pair>
      <pair>
        <displayed-value>Spanish</displayed-value>

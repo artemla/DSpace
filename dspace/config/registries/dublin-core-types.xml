@@ -599,4 +599,37 @@
         <scope_note></scope_note>
     </dc-type>
 
+  <!-- new types -->
+  <dc-type>
+	<schema>dc</schema>
+    <element>identifier</element>
+    <qualifier>patent</qualifier>
+    <scope_note>Patent No.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>coverage</element>
+    <qualifier>placename</qualifier>
+    <scope_note>Patent Country.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>citation</element>
+    <qualifier>volume</qualifier>
+    <scope_note>Volume.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>citation</element>
+    <qualifier>issue</qualifier>
+    <scope_note>Issue.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>citation</element>
+    <qualifier>pages</qualifier>
+    <scope_note>Pages.</scope_note>
+  </dc-type>
+  <!-- new types -->
+  
 </dspace-dc-types>
