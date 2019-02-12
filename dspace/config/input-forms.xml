@@ -127,10 +127,35 @@
          <dc-element>publisher</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
+         <label>Journal Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+         <required></required>
+         <type-bind>Article</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
+         <type-bind>Book,Book chapter,Journal,Monograph,Textbook,Handbook,Course of Lectures,Methodical Recommendations,Laboratory Instructions</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Conference Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+         <required></required>
+         <type-bind>Conference Proceedings,Publication in Conference Proceedings</type-bind>
        </field>
        
        <field>
@@ -166,7 +191,7 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Article,Book,Thesis,Monograph,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Laboratory Instructions,PhD thesis,Journal</type-bind>
+         <type-bind>Article,Book,Book chapter,Monograph,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Laboratory Instructions,PhD thesis,DSC thesis,Journal</type-bind>
        </field>
 
        <field>
@@ -302,10 +327,10 @@ it, please enter the types and the actual numbers or codes.</hint>
    </value-pairs>
 
    <value-pairs value-pairs-name="common_types" dc-term="type">
-     <pair>
+     <!--<pair>
        <displayed-value>Animation</displayed-value>
        <stored-value>Animation</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>Article</displayed-value>
        <stored-value>Article</stored-value>
@@ -318,7 +343,7 @@ it, please enter the types and the actual numbers or codes.</hint>
        <displayed-value>Book chapter</displayed-value>
        <stored-value>Book chapter</stored-value>
      </pair>
-     <pair>
+     <!--<pair>
        <displayed-value>Dataset</displayed-value>
        <stored-value>Dataset</stored-value>
      </pair>
@@ -333,35 +358,35 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Image, 3-D</displayed-value>
        <stored-value>Image, 3-D</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>Journal</displayed-value>
        <stored-value>Journal</stored-value>
      </pair>
-     <pair>
+     <!--<pair>
        <displayed-value>Map</displayed-value>
        <stored-value>Map</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>Monograph</displayed-value>
        <stored-value>Monograph</stored-value>
      </pair>
-     <pair>
+     <!--<pair>
        <displayed-value>Musical Score</displayed-value>
        <stored-value>Musical Score</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>Patent</displayed-value>
        <stored-value>Patent</stored-value>
      </pair>
-     <pair>
+     <!--<pair>
        <displayed-value>Plan or blueprint</displayed-value>
        <stored-value>Plan or blueprint</stored-value>
      </pair>
      <pair>
        <displayed-value>Preprint</displayed-value>
        <stored-value>Preprint</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>Presentation</displayed-value>
        <stored-value>Presentation</stored-value>
@@ -371,6 +396,10 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>PhD thesis</stored-value>
      </pair>
      <pair>
+       <displayed-value>DSC thesis</displayed-value>
+       <stored-value>DSC thesis</stored-value>
+     </pair>
+     <!--<pair>
        <displayed-value>Recording, acoustical</displayed-value>
        <stored-value>Recording, acoustical</stored-value>
      </pair>
@@ -401,8 +430,16 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Working Paper</displayed-value>
        <stored-value>Working Paper</stored-value>
-     </pair>
+     </pair>-->
      
+     <pair>
+       <displayed-value>Conference Proceedings</displayed-value>
+       <stored-value>Conference Proceedings</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Publication in Conference Proceedings</displayed-value>
+       <stored-value>Publication in Conference Proceedings</stored-value>
+     </pair>
      <pair>
        <displayed-value>Підручник</displayed-value>
        <stored-value>Textbook</stored-value>
@@ -458,7 +495,7 @@ it, please enter the types and the actual numbers or codes.</hint>
        <displayed-value>Russian</displayed-value>
        <stored-value>ru</stored-value>
      </pair>
-     <pair>
+     <!--<pair>
        <displayed-value>Spanish</displayed-value>
        <stored-value>es</stored-value>
      </pair>
@@ -485,7 +522,7 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Turkish</displayed-value>
        <stored-value>tr</stored-value>
-     </pair>
+     </pair>-->
      <pair>
        <displayed-value>(Other)</displayed-value>
        <stored-value>other</stored-value>
