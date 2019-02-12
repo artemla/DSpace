@@ -36,6 +36,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.sql.SQLException;
 import java.util.*;
 
+import org.dspace.core.Email;
+import org.dspace.core.I18nUtil;
+
 /**
  * Service implementation for the Group object.
  * This class is responsible for all business logic calls for the Group object and is autowired by spring.
@@ -111,6 +114,15 @@ public class GroupServiceImpl extends DSpaceObjectServiceImpl<Group> implements 
         }
         group.addMember(e);
         e.getGroups().add(group);
+        // send email to a user after adding to a group
+        try {
+            Locale locale = context.getCurrentLocale();
+            Email emailToUser = Email.getEmail(I18nUtil.getEmailFilename(locale, "you_was_added_to_a_group"));
+            emailToUser.addRecipient(e.getEmail());
+            emailToUser.addArgument(group.getName());
+            emailToUser.send();
+        } catch (Exception exception) {}
+        //
         context.addEvent(new Event(Event.ADD, Constants.GROUP, group.getID(), Constants.EPERSON, e.getID(), e.getEmail(), getIdentifiers(context, group)));
     }
 
