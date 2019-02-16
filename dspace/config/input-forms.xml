@@ -237,14 +237,14 @@ it, please enter the types and the actual numbers or codes.</hint>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
          <dc-qualifier>abstract</dc-qualifier>
-         <repeatable>false</repeatable>
+         <repeatable>true</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
          <hint>Enter the abstract of the item. </hint>
          <required></required>
        </field>
 
-       <field>
+       <!--<field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
          <dc-qualifier>sponsorship</dc-qualifier>
@@ -264,7 +264,7 @@ it, please enter the types and the actual numbers or codes.</hint>
          <input-type>textarea</input-type>
          <hint>Enter any other description or comments in this box. </hint>
          <required></required>
-       </field>
+       </field>-->
      </page>
    </form>
 
