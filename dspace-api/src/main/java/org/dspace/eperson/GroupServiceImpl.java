@@ -116,7 +116,8 @@ public class GroupServiceImpl extends DSpaceObjectServiceImpl<Group> implements 
         e.getGroups().add(group);
         // send email to a user after adding to a group
         try {
-            Locale locale = context.getCurrentLocale();
+            //Locale locale = context.getCurrentLocale();
+            Locale locale = I18nUtil.getEPersonLocale(e);
             Email emailToUser = Email.getEmail(I18nUtil.getEmailFilename(locale, "you_was_added_to_a_group"));
             emailToUser.addRecipient(e.getEmail());
             emailToUser.addArgument(group.getName());
