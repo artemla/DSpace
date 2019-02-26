@@ -630,6 +630,30 @@
     <qualifier>pages</qualifier>
     <scope_note>Pages.</scope_note>
   </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>citation</element>
+    <qualifier>spage</qualifier>
+    <scope_note>Start Page.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>citation</element>
+    <qualifier>epage</qualifier>
+    <scope_note>End Page.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>title</element>
+    <qualifier>book</qualifier>
+    <scope_note>Book Title.</scope_note>
+  </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>subject</element>
+    <qualifier>specialization</qualifier>
+    <scope_note>Specialization.</scope_note>
+  </dc-type>
   <!-- new types -->
   
 </dspace-dc-types>

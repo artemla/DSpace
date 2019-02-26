@@ -72,6 +72,19 @@
          <input-type>onebox</input-type>
          <hint>Enter the main title of the item.</hint>
          <required>You must enter a main title for this item.</required>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>book</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Book Title</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Book chapter</type-bind>
        </field>
 
        <field>
@@ -83,6 +96,19 @@
          <input-type>onebox</input-type>
          <hint>If the item has any alternative titles, please enter them here.</hint>
          <required></required>
+         <type-bind>Article,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Course of Lectures,Training Program,Report,Other</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Chapter Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the main title of the item.</hint>
+         <required>You must enter a main title for this item.</required>
+         <type-bind>Book chapter</type-bind>
        </field>
 
        <field>
@@ -143,7 +169,7 @@
          <input-type>onebox</input-type>
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
-         <type-bind>Book,Book chapter,Journal,Monograph,Textbook,Handbook,Course of Lectures,Methodical Recommendations,Laboratory Instructions</type-bind>
+         <type-bind>Book,Book chapter,Journal,Monograph,Textbook,Handbook,Course of Lectures,Methodical Recommendations</type-bind>
        </field>
        
        <field>
@@ -151,7 +177,7 @@
          <dc-element>publisher</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Conference Title</label>
+         <label>Conference Proceedings Title</label>
          <input-type>onebox</input-type>
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
@@ -184,6 +210,18 @@
        
        <field>
          <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>specialization</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Specialization</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>PhD thesis,DSC thesis</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>pages</dc-qualifier>
          <repeatable>false</repeatable>
@@ -191,7 +229,31 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Article,Book,Book chapter,Monograph,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Laboratory Instructions,PhD thesis,DSC thesis,Journal</type-bind>
+         <type-bind>Book,Monograph,Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,PhD thesis,DSC thesis,Journal,Other</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>spage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>First page</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Book chapter,Article,Publication in Conference Proceedings</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>epage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>End page</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>Book chapter,Article,Publication in Conference Proceedings</type-bind>
        </field>
 
        <field>
@@ -205,6 +267,7 @@
          <hint>If the item has any identification numbers or codes associated with
 it, please enter the types and the actual numbers or codes.</hint>
          <required></required>
+         <type-bind>Article,Book,Book chapter,Journal,Monograph,Presentation,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
        </field>
 
        <field>
@@ -445,7 +508,7 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>Textbook</stored-value>
      </pair>
      <pair>
-       <displayed-value>Посібник</displayed-value>
+       <displayed-value>Навчальний посібник</displayed-value>
        <stored-value>Handbook</stored-value>
      </pair>
      <pair>
@@ -457,12 +520,8 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>Training Program</stored-value>
      </pair>
      <pair>
-       <displayed-value>Методичні рекомендації</displayed-value>
+       <displayed-value>Методичні вказівки</displayed-value>
        <stored-value>Methodical Recommendations</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Лабораторні вказівки</displayed-value>
-       <stored-value>Laboratory Instructions</stored-value>
      </pair>
      <pair>
        <displayed-value>Звіт</displayed-value>
