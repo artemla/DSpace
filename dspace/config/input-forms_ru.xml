@@ -72,7 +72,7 @@
          <input-type>onebox</input-type>
          <hint>Введите основное название материала.</hint>
          <required>Вы должны ввести основное название для этого материала.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
        </field>
        
        <field>
@@ -82,9 +82,21 @@
          <repeatable>false</repeatable>
          <label>Название книги</label>
          <input-type>onebox</input-type>
-         <hint></hint>
-         <required></required>
+         <hint>Введите название книги.</hint>
+         <required>Вы должны ввести название книги для этого материала.</required>
          <type-bind>Book chapter</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Название сборника трудов конференции</label>
+         <input-type>onebox</input-type>
+         <hint>Введите название сборника трудов конференции.</hint>
+         <required>Вы должны ввести название сборника трудов конференции для этого материала.</required>
+         <type-bind>Conference Proceedings</type-bind>
        </field>
 
        <field>
@@ -179,7 +191,7 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Conference Proceedings,Publication in Conference Proceedings</type-bind>
+         <type-bind>Publication in Conference Proceedings</type-bind>
        </field>
        
        <field>
@@ -514,7 +526,7 @@
        <stored-value>Course of Lectures</stored-value>
      </pair>
      <pair>
-       <displayed-value>Учебная программа, план</displayed-value>
+       <displayed-value>Учебная программа, рабочая программа, план</displayed-value>
        <stored-value>Training Program</stored-value>
      </pair>
      <pair>

@@ -86,7 +86,19 @@
          <required></required>
          <type-bind>Book chapter</type-bind>
        </field>
-
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Conference Proceedings Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the title of the Conference Proceedings.</hint>
+         <required>You must enter a title for this Conference Proceedings.</required>
+         <type-bind>Conference Proceedings</type-bind>
+       </field>
+       
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -181,7 +193,7 @@
          <input-type>onebox</input-type>
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
-         <type-bind>Conference Proceedings,Publication in Conference Proceedings</type-bind>
+         <type-bind>Publication in Conference Proceedings</type-bind>
        </field>
        
        <field>

@@ -72,7 +72,7 @@
          <input-type>onebox</input-type>
          <hint>Введіть основну назву матеріалу.</hint>
          <required>Ви повинні ввести основну назву для цього матеріалу.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
        </field>
        
        <field>
@@ -82,9 +82,21 @@
          <repeatable>false</repeatable>
          <label>Назва книги</label>
          <input-type>onebox</input-type>
-         <hint></hint>
-         <required></required>
+         <hint>Введіть основну назву книги.</hint>
+         <required>Ви повинні ввести назву книги для цього матеріалу.</required>
          <type-bind>Book chapter</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Назва збірнику праць конференції</label>
+         <input-type>onebox</input-type>
+         <hint>Введіть назву збірнику праць конференції.</hint>
+         <required>Ви повинні ввести назву збірнику праць конференції для цього матеріалу.</required>
+         <type-bind>Conference Proceedings</type-bind>
        </field>
 
        <field>
@@ -179,7 +191,7 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Conference Proceedings,Publication in Conference Proceedings</type-bind>
+         <type-bind>Publication in Conference Proceedings</type-bind>
        </field>
        
        <field>
@@ -514,7 +526,7 @@
        <stored-value>Course of Lectures</stored-value>
      </pair>
      <pair>
-       <displayed-value>Навчальна програма, план</displayed-value>
+       <displayed-value>Навчальна програма, робоча програма, план</displayed-value>
        <stored-value>Training Program</stored-value>
      </pair>
      <pair>
