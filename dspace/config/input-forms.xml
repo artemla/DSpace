@@ -59,7 +59,7 @@
          <repeatable>true</repeatable>
          <label>Authors</label>
          <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item. In Ukrainian language (if possible, in the original language otherwise), no cuts</hint>
+         <hint>Enter the names of the authors of this item. &lt;strong style="color:red;"&gt;In Ukrainian language&lt;/strong&gt; (if possible, in the original language otherwise), &lt;strong style="color:red;"&gt;no cuts&lt;/strong&gt;</hint>
          <required></required>
        </field>
 
@@ -303,7 +303,7 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>true</repeatable>
          <label>Subject Keywords</label>
          <input-type>twobox</input-type>
-         <hint>Enter appropriate subject keywords or phrases. </hint>
+         <hint>Enter appropriate subject keywords or phrases. &lt;strong style="color:red;"&gt;One keyword - one field.&lt;/strong&gt;</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>

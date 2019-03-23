@@ -59,7 +59,7 @@
          <repeatable>true</repeatable>
          <label>Автор, співавтори</label>
          <input-type>name</input-type>
-         <hint>Введіть імена авторів цього матеріалу. Українською мовою (якщо можливо, мовою оригіналу в іншому випадку), без скорочень.</hint>
+         <hint>Введіть імена авторів цього матеріалу. &lt;strong style="color:red;"&gt;Українською мовою&lt;/strong&gt; (якщо можливо, мовою оригіналу в іншому випадку), &lt;strong style="color:red;"&gt;без скорочень&lt;/strong&gt;.</hint>
          <required></required>
        </field>
 
@@ -301,7 +301,7 @@
          <label>Ключові слова</label>
          <input-type>twobox</input-type>
          <hint>Введіть нижче відповідні матеріалу ключові слова. 
-         Ключові слова наводьте у нижньому регістрі. Додавайте також й іншими мовами.</hint>
+         Ключові слова наводьте у нижньому регістрі. Додавайте також й іншими мовами. &lt;strong style="color:red;"&gt;У кожному полі - лише одне ключове слово!&lt;/strong&gt;</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>

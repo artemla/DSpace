@@ -59,7 +59,7 @@
          <repeatable>true</repeatable>
          <label>Автор, соавтор</label>
          <input-type>name</input-type>
-         <hint>Введите имена авторов этого материала. На украинском языке (если возможно, на языке оригинала в другом случае), без сокращений.</hint>
+         <hint>Введите имена авторов этого материала. &lt;strong style="color:red;"&gt;На украинском языке&lt;/strong&gt; (если возможно, на языке оригинала в другом случае), &lt;strong style="color:red;"&gt;без сокращений&lt;/strong&gt;.</hint>
          <required></required>
        </field>
 
@@ -301,7 +301,7 @@
          <label>Ключевые слова</label>
          <input-type>twobox</input-type>
          <hint>Введите соответствующие материалу ключевые слова.
-          Ключевые слова приводите в нижнем регистре. Добавляйте также и на других языках.</hint>
+          Ключевые слова приводите в нижнем регистре. Добавляйте также и на других языках. &lt;strong style="color:red;"&gt;В каждом поле - одно ключевое слово!&lt;/strong&gt;</hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
