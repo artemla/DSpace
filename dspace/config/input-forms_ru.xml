@@ -199,7 +199,7 @@
          <dc-element>citation</dc-element>
          <dc-qualifier>volume</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Номер тома</label>
+         <label>Номер тома (Volume)</label>
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
@@ -211,7 +211,7 @@
          <dc-element>citation</dc-element>
          <dc-qualifier>issue</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Номер выпуска</label>
+         <label>Номер выпуска (Issue)</label>
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
