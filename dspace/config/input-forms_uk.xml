@@ -378,6 +378,10 @@
        <stored-value>issn</stored-value>
      </pair>
      <pair>
+       <displayed-value>DOI</displayed-value>
+       <stored-value>doi</stored-value>
+     </pair>
+     <pair>
        <displayed-value>Інше</displayed-value>
        <stored-value>other</stored-value>
      </pair>

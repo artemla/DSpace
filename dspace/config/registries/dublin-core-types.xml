@@ -654,6 +654,12 @@
     <qualifier>specialization</qualifier>
     <scope_note>Specialization.</scope_note>
   </dc-type>
+  <dc-type>
+	<schema>dc</schema>
+    <element>identifier</element>
+    <qualifier>doi</qualifier>
+    <scope_note>DOI</scope_note>
+  </dc-type>
   <!-- new types -->
   
 </dspace-dc-types>
