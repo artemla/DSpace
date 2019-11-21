@@ -98,6 +98,18 @@
          <required>Вы должны ввести название сборника трудов конференции для этого материала.</required>
          <type-bind>Conference Proceedings</type-bind>
        </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Название</label>
+         <input-type>onebox</input-type>
+         <hint>&lt;strong style="color:red;"&gt; Внимание! Введите всех авторов монографии! Запрещено добавлять только свой раздел! &lt;/strong&gt; &lt;br&gt; Введите название монографии.</hint>
+         <required>Вы должны ввести название монографии.</required>
+         <type-bind>Monograph</type-bind>
+       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
