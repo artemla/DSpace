@@ -62,6 +62,18 @@
          <hint>Введите имена авторов этого материала. &lt;strong style="color:red;"&gt;На украинском языке&lt;/strong&gt; (если возможно, на языке оригинала в другом случае), &lt;strong style="color:red;"&gt;без сокращений&lt;/strong&gt;.</hint>
          <required></required>
        </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Руководитель</label>
+         <input-type>name</input-type>
+         <hint>Введите имя руководителя. &lt;strong style="color:red;"&gt;На украинском языке&lt;/strong&gt; (если возможно, на языке оригинала в другом случае), &lt;strong style="color:red;"&gt;без сокращений&lt;/strong&gt;.</hint>
+         <required></required>
+         <type-bind>Bachelor Thesis, Master Thesis</type-bind>
+       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
@@ -72,7 +84,7 @@
          <input-type>onebox</input-type>
          <hint>Введите основное название материала.</hint>
          <required>Вы должны ввести основное название для этого материала.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
        </field>
        
        <field>
@@ -552,6 +564,14 @@
      <pair>
        <displayed-value>Отчет</displayed-value>
        <stored-value>Report</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Квалификационная работа бакалавра</displayed-value>
+       <stored-value>Bachelor Thesis</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Квалификационная работа магистра</displayed-value>
+       <stored-value>Master Thesis</stored-value>
      </pair>
      
      <pair>

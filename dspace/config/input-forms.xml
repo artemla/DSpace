@@ -62,6 +62,18 @@
          <hint>Enter the names of the authors of this item. &lt;strong style="color:red;"&gt;In Ukrainian language&lt;/strong&gt; (if possible, in the original language otherwise), &lt;strong style="color:red;"&gt;no cuts&lt;/strong&gt;</hint>
          <required></required>
        </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Advisor</label>
+         <input-type>name</input-type>
+         <hint>Enter the name of the advisor of this item. &lt;strong style="color:red;"&gt;In Ukrainian language&lt;/strong&gt; (if possible, in the original language otherwise), &lt;strong style="color:red;"&gt;no cuts&lt;/strong&gt;.</hint>
+         <required></required>
+         <type-bind>Bachelor Thesis, Master Thesis</type-bind>
+       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
@@ -72,7 +84,7 @@
          <input-type>onebox</input-type>
          <hint>Enter the main title of the item.</hint>
          <required>You must enter a main title for this item.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
        </field>
        
        <field>
@@ -554,6 +566,14 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Report</displayed-value>
        <stored-value>Report</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Bachelor Thesis</displayed-value>
+       <stored-value>Bachelor Thesis</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Master Thesis</displayed-value>
+       <stored-value>Master Thesis</stored-value>
      </pair>
      
      <pair>
