@@ -84,7 +84,7 @@
          <input-type>onebox</input-type>
          <hint>Enter the main title of the item.</hint>
          <required>You must enter a main title for this item.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
        </field>
        
        <field>
@@ -132,7 +132,7 @@
          <input-type>onebox</input-type>
          <hint>If the item has any alternative titles, please enter them here.</hint>
          <required></required>
-         <type-bind>Article,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Course of Lectures,Training Program,Report,Other</type-bind>
+         <type-bind>Article,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Course of Lectures,Training Program,Syllabus,Report,Other</type-bind>
        </field>
        
        <field>
@@ -265,7 +265,7 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Book,Monograph,Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,PhD thesis,DSC thesis,Journal,Other</type-bind>
+         <type-bind>Book,Monograph,Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,PhD thesis,DSC thesis,Journal,Other</type-bind>
        </field>
        
        <field>
@@ -303,7 +303,7 @@
          <hint>If the item has any identification numbers or codes associated with
 it, please enter the types and the actual numbers or codes.</hint>
          <required></required>
-         <type-bind>Article,Book,Book chapter,Journal,Monograph,Presentation,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Book chapter,Journal,Monograph,Presentation,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Other</type-bind>
        </field>
 
        <field>
@@ -558,6 +558,10 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Training Program</displayed-value>
        <stored-value>Training Program</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Syllabus</displayed-value>
+       <stored-value>Syllabus</stored-value>
      </pair>
      <pair>
        <displayed-value>Methodical Recommendations</displayed-value>

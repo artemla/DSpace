@@ -84,7 +84,7 @@
          <input-type>onebox</input-type>
          <hint>Введите основное название материала.</hint>
          <required>Вы должны ввести основное название для этого материала.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
+         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
        </field>
        
        <field>
@@ -132,7 +132,7 @@
          <input-type>onebox</input-type>
          <hint>Если материал имеет названия на других языках, пожалуйста, введите их ниже.</hint>
          <required></required>
-         <type-bind>Article,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Course of Lectures,Training Program,Report,Other</type-bind>
+         <type-bind>Article,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Course of Lectures,Training Program,Syllabus,Report,Other</type-bind>
        </field>
        
        <field>
@@ -263,7 +263,7 @@
          <input-type>onebox</input-type>
          <hint></hint>
          <required></required>
-         <type-bind>Book,Monograph,Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,PhD thesis,DSC thesis,Journal,Other</type-bind>
+         <type-bind>Book,Monograph,Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,PhD thesis,DSC thesis,Journal,Other</type-bind>
        </field>
        
        <field>
@@ -300,7 +300,7 @@
          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
          <hint>Если материал имеет какие-либо идентификационные номера или коды связанные с ним, пожалуйста, выберите ниже тип идентификационной системы и имеющиеся номера или коды.</hint>
          <required></required>
-         <type-bind>Article,Book,Book chapter,Journal,Monograph,Presentation,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Methodical Recommendations,Report,Other</type-bind>
+         <type-bind>Article,Book,Book chapter,Journal,Monograph,Presentation,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Other</type-bind>
        </field>
 
        <field>
@@ -556,6 +556,10 @@
      <pair>
        <displayed-value>Учебная программа, рабочая программа, план</displayed-value>
        <stored-value>Training Program</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Силабус</displayed-value>
+       <stored-value>Syllabus</stored-value>
      </pair>
      <pair>
        <displayed-value>Методические указания</displayed-value>
