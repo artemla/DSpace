@@ -497,6 +497,10 @@
        <stored-value>PhD thesis</stored-value>
      </pair>
      <pair>
+       <displayed-value>Диссертация доктора философии</displayed-value>
+       <stored-value>PhD thesis</stored-value>
+     </pair>
+     <pair>
        <displayed-value>Диссертация доктора наук</displayed-value>
        <stored-value>DSC thesis</stored-value>
      </pair>
