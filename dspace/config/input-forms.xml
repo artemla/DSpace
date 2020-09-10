@@ -84,7 +84,7 @@
          <input-type>onebox</input-type>
          <hint>Enter the main title of the item.</hint>
          <required>You must enter a main title for this item.</required>
-         <type-bind>Article,Book,Journal,Monograph,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
+         <type-bind>Article,Book,Journal,Patent,Presentation,PhD thesis,DSC thesis,Conference Proceedings,Publication in Conference Proceedings,Textbook,Handbook,Course of Lectures,Training Program,Syllabus,Methodical Recommendations,Report,Bachelor Thesis,Master Thesis,Other</type-bind>
        </field>
        
        <field>
